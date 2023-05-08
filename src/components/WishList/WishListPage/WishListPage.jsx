@@ -20,7 +20,10 @@ let wishListItemsFromReduxStore = globalState.wishListItems.wishListItems ;
 
 let [wishListItems, setWishListItems] = useState(wishListItemsFromReduxStore)
 
-
+useEffect(()=>{
+  setWishListItems(wishListItemsFromReduxStore)
+  
+},[wishListItemsFromReduxStore])
 
 const dispatch = useDispatch()
 

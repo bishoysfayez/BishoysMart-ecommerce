@@ -1,3 +1,6 @@
+.deleteIcon {
+  cursor: pointer;
+}
 .deleteIcon i {
   font-size: 1.5rem !important;
 }/*# sourceMappingURL=WishListPage.module.css.map */
