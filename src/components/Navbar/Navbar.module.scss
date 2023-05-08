@@ -1,0 +1,154 @@
+@import "../../shared/vars.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Pacifico&display=swap");
+
+.navbarContainer {
+  position: absolute;
+  transition-timing-function: ease-in;
+  transition: 0.7s;
+  padding: 1rem 0.5 rem 4rem 0.5rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  .searchContainer {
+    .searchInput {
+      width: 400px;
+      //max-width: 600px;
+      //min-width: 300px;
+      margin: 1rem 1rem;
+
+      .searchIcon {
+        font-size: 1.25rem;
+      }
+      input {
+        background-color: rgba($white, 0.7);
+      }
+    }
+  }
+  .logo {
+    margin-left: 0;
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 300px;
+    .logoContainer {
+      .logoMainBrand {
+        text-align: left;
+        font-size: 2rem;
+        font-family: "Pacifico", cursive;
+        color: $green;
+        padding: 0.5rem;
+      }
+      .logoSubTitle {
+        font-family: "Lato", sans-serif;
+        font-size: 1.4rem;
+        color: $red;
+        font-weight: 900;
+      }
+    }
+  }
+  .navbarLinks ul {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    li {
+      width: 90px;
+      font-family: "Lato", sans-serif;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      margin-top: 0;
+      margin: 0 0.25rem 0 0.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+      a {
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: rgba($white, 0.46);
+
+        i {
+          color: $black !important;
+        }
+
+        .textSmall {
+          font-size: 0.8rem !important;
+          font-family: "Lato", sans-serif;
+          color: $black !important;
+        }
+      }
+    }
+    li:hover a {
+      background-color: $black;
+
+      i {
+        color: $white !important;
+      }
+      .textSmall {
+        color: $white !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 3rem;
+    .searchContainer {
+      margin: auto;
+      .searchInput {
+        max-width: 200px;
+      }
+    }
+    .logo {
+      margin: auto;
+      .logoContainer {
+        .logoMainBrand {
+          text-align: center;
+          font-size: 1.5rem;
+        }
+        .logoSubTitle {
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .navbarLinks {
+      ul {
+        color: $white;
+        position: absolute;
+        left: -30px;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+      }
+      .searchContainer {
+        visibility: hidden;
+        .searchInput {
+          width: 150px;
+          //max-width: 600px;
+          //min-width: 300px;
+          //margin: 1rem 1rem;
+
+          .searchIcon {
+            font-size: 1.25rem;
+          }
+          input {
+            background-color: rgba($white, 0.7);
+          }
+        }
+      }
+    }
+  }
+}

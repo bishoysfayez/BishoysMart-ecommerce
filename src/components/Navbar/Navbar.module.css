@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Pacifico&display=swap");
+.navbarContainer {
+  position: absolute;
+  transition-timing-function: ease-in;
+  transition: 0.7s;
+  padding: 1rem 0.5 rem 4rem 0.5rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.navbarContainer .searchContainer .searchInput {
+  width: 400px;
+  margin: 1rem 1rem;
+}
+.navbarContainer .searchContainer .searchInput .searchIcon {
+  font-size: 1.25rem;
+}
+.navbarContainer .searchContainer .searchInput input {
+  background-color: rgba(247, 255, 247, 0.7);
+}
+.navbarContainer .logo {
+  margin-left: 0;
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 300px;
+}
+.navbarContainer .logo .logoContainer .logoMainBrand {
+  text-align: left;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  color: #4ecdc4;
+  padding: 0.5rem;
+}
+.navbarContainer .logo .logoContainer .logoSubTitle {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #ff6b6b;
+  font-weight: 900;
+}
+.navbarContainer .navbarLinks ul {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.navbarContainer .navbarLinks ul li {
+  width: 90px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  margin-top: 0;
+  margin: 0 0.25rem 0 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.navbarContainer .navbarLinks ul li a {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(247, 255, 247, 0.46);
+}
+.navbarContainer .navbarLinks ul li a i {
+  color: #03045e !important;
+}
+.navbarContainer .navbarLinks ul li a .textSmall {
+  font-size: 0.8rem !important;
+  font-family: "Lato", sans-serif;
+  color: #03045e !important;
+}
+.navbarContainer .navbarLinks ul li:hover a {
+  background-color: #03045e;
+}
+.navbarContainer .navbarLinks ul li:hover a i {
+  color: #f7fff7 !important;
+}
+.navbarContainer .navbarLinks ul li:hover a .textSmall {
+  color: #f7fff7 !important;
+}
+
+@media screen and (max-width: 720px) {
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+  .navbarContainer .searchContainer {
+    margin: auto;
+  }
+  .navbarContainer .searchContainer .searchInput {
+    max-width: 200px;
+  }
+  .navbarContainer .logo {
+    margin: auto;
+  }
+  .navbarContainer .logo .logoContainer .logoMainBrand {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .navbarContainer .logo .logoContainer .logoSubTitle {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .navbarContainer .navbarLinks ul {
+    color: #f7fff7;
+    position: absolute;
+    left: -30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fff7;
+  }
+  .navbarContainer .navbarLinks .searchContainer {
+    visibility: hidden;
+  }
+  .navbarContainer .navbarLinks .searchContainer .searchInput {
+    width: 150px;
+  }
+  .navbarContainer .navbarLinks .searchContainer .searchInput .searchIcon {
+    font-size: 1.25rem;
+  }
+  .navbarContainer .navbarLinks .searchContainer .searchInput input {
+    background-color: rgba(247, 255, 247, 0.7);
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

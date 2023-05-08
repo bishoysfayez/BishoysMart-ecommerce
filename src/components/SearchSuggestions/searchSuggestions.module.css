@@ -1,0 +1,30 @@
+.searchSuggestionsContainer {
+  overflow: hidden;
+  width: 50%;
+  max-width: 600px;
+  display: block;
+  position: absolute;
+  z-index: 15;
+  background-color: #f7fff7 !important;
+}
+.searchSuggestionsContainer .searchSuggestionEntry {
+  max-height: 100px;
+  background-color: rgba(255, 107, 107, 0.1) !important;
+  border-bottom: 1px solid rgba(3, 4, 94, 0.7) !important;
+  cursor: pointer;
+}
+.searchSuggestionsContainer .searchSuggestionEntry .resultImageContainer {
+  overflow: hidden;
+}
+.searchSuggestionsContainer .searchSuggestionEntry .resultImageContainer img {
+  width: 70px;
+  max-width: 100px;
+}
+.searchSuggestionsContainer .searchSuggestionEntry .resultTextContainer .productTitle {
+  margin-left: 20px;
+  color: #03045e !important;
+  font-size: 1rem;
+}
+.searchSuggestionsContainer .searchSuggestionEntry:hover {
+  background-color: rgba(255, 107, 107, 0.4) !important;
+}/*# sourceMappingURL=searchSuggestions.module.css.map */

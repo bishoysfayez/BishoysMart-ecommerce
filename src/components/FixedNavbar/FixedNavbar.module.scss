@@ -1,0 +1,137 @@
+@import "../../shared/vars.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Pacifico&display=swap");
+
+.fixedNavbar {
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15!important;
+
+  .navbarContainer {
+    background-color: rgba($green,1) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .searchContainer {
+      flex-shrink: 2;
+      display: flex;
+      flex-direction: row;
+      margin: auto !important;
+      width: 600px;
+      .searchInput {
+        width: 450px;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 1rem 1rem;
+
+        .searchIcon {
+          font-size: 1.25rem;
+        }
+      }
+    }
+    .logo {
+      margin-left: 0;
+      align-self: flex-start;
+      justify-self: flex-start;
+      width: auto;
+      padding-left: 2rem;
+      .logoContainer {
+        .logoMainBrand {
+          text-align: left;
+          font-size: 1.5rem;
+          font-family: "Pacifico", cursive;
+          color: $white;
+        }
+        .logoSubTitle {
+          font-family: "Lato", sans-serif;
+          font-size: 1rem;
+          color: $white;
+          font-weight: 900;
+        }
+      }
+    }
+    .navbarLinks {
+      max-width: 600px;
+      ul {
+        li {
+          margin: auto 1rem;
+
+          font-family: "Lato", sans-serif;
+          font-size: 1.2rem;
+          color: $white !important;
+          cursor: pointer;
+          a i {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .navbarContainer {
+      min-width: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: auto;
+
+      .searchContainer {
+        width: 90%;
+        margin: auto 0.5rem !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        order: 3;
+        flex-shrink: 4;
+        align-items: flex-start !important;
+        justify-content: flex-start;
+        .searchInput {
+          max-width: 300px;
+          margin: 0.5rem;
+          align-items: center;
+          justify-content: center;
+          text-align: left;
+          input {
+            justify-self: flex-start;
+          }
+        }
+      }
+      .logo {
+        width: 100px;
+        text-align: left;
+        margin: 0.5rem;
+        cursor: pointer;
+
+        .logoContainer {
+          .logoMainBrand {
+            text-align: left;
+            font-size: 1rem;
+            font-family: "Pacifico", cursive;
+           
+          }
+          .logoSubTitle {
+            font-family: "Lato", sans-serif;
+            font-size: 1rem;
+            display: inline;
+          }
+        }
+      }
+      .navbarLinks{
+        margin-right: 1rem;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+@import "../../../shared/vars.scss";
+
+.cartIconContainer {
+    position: relative!important;
+    display: inline-block;
+    padding: auto;
+    i{
+        font-size: 1.7rem;
+    }
+  .cartQtyContainer {
+
+    position: absolute;
+     width: 100%;
+    top: -20px;
+    right: -35px;
+    border-radius: 3rem;
+    background-color: rgba($red,1);
+    color: $white;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}

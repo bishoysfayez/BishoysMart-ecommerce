@@ -1,0 +1,58 @@
+@import '../../../shared/vars.scss';
+
+
+.wishListBtnContainer {
+
+  .wishListBtnNotActive {
+    color: rgba($green, 0.6) !important;
+    background-color: rgba($white,0.6) !important;
+    text-align: center;
+    text-shadow: 2px 2px $green -2px -2px $green;
+    font-size: 1.5rem;
+    border: 1px solid $green;
+    border-radius: 30px;
+    i {
+      color: rgba($green, 0.6) !important;
+    }
+  }
+
+
+
+  .wishListBtnActive {
+    background-color: rgba($green,0.6) !important;
+    text-align: center;
+    text-shadow: 2px 2px $green -2px -2px $green;
+    font-size: 1.5rem;
+    border: 1px solid $green;
+    border-radius: 30px;
+    padding: 1 rem 0.5rem;
+    i {
+      color: rgba(red,1) !important;
+    }
+  }
+
+
+}
+.wishListBtnContainer:hover{
+  .wishListBtnNotActive {
+    background-color: rgba($green, 0.5) !important;
+    border: 2px solid $white;
+
+    i {
+      text-shadow: 4px 7px 18px rgba($red, 0.15);
+      color: rgba($red,1) !important;
+
+    }
+
+  }
+  .wishListBtnActive {
+    background-color: rgba($green, 0.5) !important;
+    border: 2px solid $white;
+
+    i {
+      text-shadow: 4px 7px 18px rgba(red, 0.15);
+      color: rgba($white,1) !important;
+
+    }
+  }
+}

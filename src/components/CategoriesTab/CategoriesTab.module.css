@@ -1,0 +1,76 @@
+.categoryTab {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(78, 205, 196, 0.51);
+  margin: auto;
+  padding: 1rem 0;
+  position: fixed;
+  top: 140px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.categoryTab ul li {
+  font-size: 1.5rem;
+  width: 100%;
+  color: #03045e;
+  transform: scale(1);
+  transition: transform ease-out;
+  text-align: center;
+  margin: auto;
+  transition: all 0.3s ease-in;
+}
+.categoryTab ul li a {
+  text-align: center;
+  color: #03045e !important;
+  padding: 1rem !important;
+  text-decoration: none;
+  margin: auto;
+  font-weight: 500;
+  color: #03045e !important;
+  text-align: center !important;
+}
+.categoryTab ul li a i {
+  text-align: center !important;
+  color: #03045e !important;
+  font-size: 2rem;
+  padding: 0.25rem;
+  margin: auto 0.5rem;
+  transition: all 0.3s ease-in;
+}
+.categoryTab ul li a .textSmall {
+  text-align: center !important;
+  font-size: 0.75rem;
+  color: #03045e !important;
+  transition: all 0.3s ease-in;
+}
+.categoryTab li:hover {
+  background-color: #f7fff7;
+}
+.categoryTab li:hover .categoryLink {
+  color: #ffe66d;
+}
+.categoryTab li:hover a i {
+  color: #ff6b6b !important;
+}
+.categoryTab li:hover a .textSmall {
+  color: #ff6b6b !important;
+}
+
+@media screen and (max-width: 720px) {
+  .categoryTab {
+    width: 3rem !important;
+  }
+  .categoryTab ul li a {
+    margin: auto;
+  }
+  .categoryTab ul li a i {
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center !important;
+  }
+  .categoryTab ul li a p {
+    display: none;
+    color: white;
+    text-align: center !important;
+  }
+}/*# sourceMappingURL=CategoriesTab.module.css.map */

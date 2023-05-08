@@ -1,0 +1,55 @@
+@import "../../shared/vars.scss";
+
+.card {
+  margin: 20px;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+
+  .starsAndHeartContainer {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    .badgeContainer {
+      position: relative;
+      margin: 0;
+      .container-fluid{
+        position: absolute;
+        top: 0;
+      }
+     
+    }
+    .stars {
+      margin: 1rem 1rem 3rem 1rem !important;
+      i {
+        font-size: 1.2rem;
+        margin: 0.2rem;
+      }
+    }
+  }
+
+  .cardImageContainer {
+    width: 200px;
+    height: 250px;
+    max-width: 100%;
+    max-height: 100%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto !important;
+      //border-radius: 30px;;
+    }
+  }
+  button {
+    background-color: rgba(255, 127, 80, 0.7) !important;
+    font-size: 1.2rem;
+    
+  
+  }
+  button:hover {
+    background-color: rgba(238, 86, 31, 0.6) !important;
+    color: white;
+  }
+}
